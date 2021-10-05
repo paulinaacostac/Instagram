@@ -2,22 +2,82 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_margin="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-<FrameLayout
-    android:id="@+id/flContainer"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_above="@+id/bottomNavigation"
-    />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        app:srcCompat="@drawable/direct" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        app:srcCompat="@drawable/ufi_heart" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-10dp"
+        app:srcCompat="@drawable/nav_logo_whiteout" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        app:srcCompat="@drawable/instagram_new_post_outline_24" />
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginStart="-10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+
+    </FrameLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id = "@+id/bottomNavigation"
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        app:menu = "@menu/menu_bottom_navigation"/>
+        android:layout_marginBottom="-2dp"
+        android:background="#FFFFFF"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#000000"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_bottom_navigation" />
 </RelativeLayout>

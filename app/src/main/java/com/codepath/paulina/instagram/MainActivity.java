@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.nux_dayone_landing_logo);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);*/
+
+
         if (ParseUser.getCurrentUser() == null) {
             Intent i = new Intent(this, LoginActivity.class);
             startActivity(i);
@@ -93,15 +99,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void goHomepageActivity() {
-        Intent i = new Intent(this,HomepageActivity.class);
-        startActivity(i);
-    }
-
-    private void goProfileActivity() {
-        Intent i = new Intent(this, ProfileActivity.class);
-        startActivity(i);
-    }
 
 
 

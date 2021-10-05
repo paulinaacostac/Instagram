@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:layout_marginStart="-10dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="-10dp"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="2dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
         tools:text="pm.acosta" />
 
     <ImageView
         android:id="@+id/ivImage"
-        android:layout_width="match_parent"
+        android:layout_width="326dp"
         android:layout_height="300dp"
+        android:layout_below="@+id/tvUsername"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
         android:scaleType="centerCrop"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -25,7 +40,77 @@
         android:id="@+id/tvDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         tools:text="hipster look" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivImage"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ufi_heart" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="20 likes"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/imageView7"
+        app:srcCompat="@drawable/ufi_comment" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imageView8"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        app:srcCompat="@drawable/ufi_new_direct" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15dp"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        app:srcCompat="@drawable/ufi_save" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        app:srcCompat="@drawable/ufi_more" />
+
+</RelativeLayout>

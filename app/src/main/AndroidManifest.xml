@@ -23,9 +23,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".HomepageActivity"
-            android:exported="true" />
-        <activity
             android:name=".ProfileActivity"
             android:exported="true" />
 

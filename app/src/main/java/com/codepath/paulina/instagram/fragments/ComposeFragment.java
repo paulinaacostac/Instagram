@@ -71,17 +71,19 @@ public class ComposeFragment extends Fragment {
     {
         super.onViewCreated(view, savedInstanceState);
         etDescription = view.findViewById(R.id.etDescription);
-        btnCaptureImage = view.findViewById(R.id.btnCaptureImage);
+        //btnCaptureImage = view.findViewById(R.id.btnCaptureImage);
         ivPostImage = view.findViewById(R.id.ivPostImage);
         btnSubmit = view.findViewById(R.id.btnSubmit);
 
-        btnCaptureImage.setOnClickListener(new View.OnClickListener() {
+        launchCamera();
+
+        /*btnCaptureImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 launchCamera();
 
             }
-        });
+        });*/
 
         //queryPosts();
 
