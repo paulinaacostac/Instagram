@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setLogo(R.drawable.nux_dayone_landing_logo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);*/
 
+        //ParseUser.logOut();
+        //ParseUser currentUser = ParseUser.getCurrentUser(); // this will now be null
 
         if (ParseUser.getCurrentUser() == null) {
             Intent i = new Intent(this, LoginActivity.class);

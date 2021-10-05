@@ -39,7 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="#405DE6"
-        android:text="Login" />
+        android:text="Login"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnSignup"
@@ -47,7 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="#405DE6"
-        android:text="Sign Up" />
+        android:text="Sign Up"
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>
