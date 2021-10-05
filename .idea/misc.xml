@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram/app/src/main/res/layout/activity_homepage.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram/app/src/main/res/layout/fragment_compose.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram/app/src/main/res/layout/fragment_posts.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram/app/src/main/res/layout/item_post.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram2/app/src/main/res/layout/activity_homepage.xml" value="0.33" />
         <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram2/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/pauli/OneDrive/1FIU/Fall 2021/Android CodePath/Instagram2/app/src/main/res/layout/activity_logout.xml" value="0.16354166666666667" />
